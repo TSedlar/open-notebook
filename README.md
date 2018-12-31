@@ -11,10 +11,10 @@ It is not limited to any one topic.
 Additional Information
 ------------
 
-<sub><sup>
+<sub>
 If you liked the research I collected and want to donate, feel free to use one of the donation methods above.
-</sup></sub>
+</sub>
 
-<sub><sup>
+<sub>
 If the research you ended up using was helpful, consider donating to the author of the linked article.
-</sup></sub>
+/sub>
