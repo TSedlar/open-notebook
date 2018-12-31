@@ -15,6 +15,7 @@ Additional Information
 If you liked the research I collected and want to donate, feel free to use one of the donation methods above.
 </sub>
 
+
 <sub>
 If the research you ended up using was helpful, consider donating to the author of the linked article.
-/sub>
+</sub>
