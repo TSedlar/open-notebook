@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage{hyperref}
+
+\begin{document}
+
+\title{Opaque Predicates}
+\author{Tyler Sedlar}
+
+\maketitle
+
+\section{Meaning}
+In computer programming, an opaque predicate is a predicate--an expression that evaluates to either "true" or "false"--for which the outcome is known by the programmer a priori, but which, for a variety of reasons, still needs to be evaluated at run time. Opaque predicates have been used as watermarks, as it will be identifiable in a program's executable. They can also be used to prevent an overzealous optimizer from optimizing away a portion of a program. Another use is in obfuscating the control or dataflow of a program to make reverse engineering harder.\footnote{\url{https://en.wikipedia.org/wiki/Opaque_predicate}}
+
+\section{Resources}
+
+A very informative document by Dongpeng Xu, Jiang Ming, and Dinghao Wu can be found \href{https://faculty.ist.psu.edu/wu/papers/opaque-isc16.pdf}{here}. It explains the meaning, use cases, and different types of opaque predicates along with the namings for content associated with them.
+
+\section{Personal Notes/Summary}
+
+An opaque predicate is a predetermined branch used for watermarking code in obfuscation processes, which usually consists of checking a variable or parameter against a constant. An incorrect parameter value can cause a program to terminate early.
+
+\end{document}
