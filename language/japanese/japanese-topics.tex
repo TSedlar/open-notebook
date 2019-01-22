@@ -1,0 +1,373 @@
+% xelatex
+\documentclass{article}
+\usepackage{xeCJK}
+\usepackage{fontspec}
+\usepackage[Latin,Greek]{ucharclasses}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{caption}
+\usepackage[a4paper,margin=0.75in,footskip=0.25in]{geometry}
+
+% === BEGIN SETUP ===
+\setmainfont{FreeSerif}
+\setCJKmainfont{AR PL UMing CN}
+% ===  END SETUP  ===
+
+\begin{document}
+
+\title{Learning Japanese}
+\author{Tyler Sedlar}
+
+\maketitle
+
+% === BEGIN ESSENTIALS SECTION ===
+\section*{Essentials}
+
+There are 3 main things that need to be known to be able to read Japanese:
+
+\begin{itemize}
+\item \hyperref[sec:hiragana]{Hiragana}
+\item \hyperref[sec:katakana]{Katakana}
+\item \hyperref[sec:kanji]{Kanji}
+\end{itemize}
+
+\section*{Helpful Links}
+
+\begin{itemize}
+\item \href{https://www.freejapaneselessons.com/}{FreeJapaneseLessons}
+\item \href{https://addons.mozilla.org/en-US/firefox/addon/rikaichamp/}{Rikaichamp (Firefox)}
+\item \href{https://chrome.google.com/webstore/detail/rikaikun/jipdnfibhldikgcjhfnomkfpcebammhp?hl=en}{Rikaikun (Chrome)}
+\item \href{https://www3.nhk.or.jp/news/easy/}{Easy NHK News}
+\item \href{https://gist.github.com/TSedlar/ee614e00f90ad1d5069cb0416cf59a65}{NHK Romaji (Greasemonkey)}
+\item \href{http://www.guidetojapanese.org/learn/}{Tae Kim's Guide to Japanese} (\href{http://www.guidetojapanese.org/grammar_guide.pdf}{PDF})
+\end{itemize}
+
+\section*{Helpful Books}
+\begin{itemize}
+\item A Dictionary of Basic Japanese Grammar (ISBN-10: 4789004546)
+\item Japanese the Manga Way (ISBN-10: 1880656906)
+\end{itemize}
+
+\pagebreak
+
+% === BEGIN HIRAGANA SECTION ===
+\section*{\center Hiragana}
+\label{sec:hiragana}
+
+\center{
+  Hiragana is used for native Japanese words. \break \break
+  \begin{minipage}{\textwidth}
+    \begin{minipage}[t]{.49\textwidth}
+      \centering
+      \captionof*{table}{\textbf{\underline{Syllabary}}}
+      \Large{
+        \begin{tabular}[t]{|l|l|l|l|l|}
+        \hline
+        あ   a  & い   i   & う   u   & え   e  & お   o  \\ \hline
+        か   ka & き   ki  & く   ku  & け   ke & こ   ko \\ \hline
+        が   ga & ぎ   gi  & ぐ   gu  & げ   ge & ご   go \\ \hline
+        さ   sa & し   shi & す   su  & せ   se & そ   so \\ \hline
+        ざ   za & じ   ji  & ず   zu  & ぜ   ze & ぞ   zo \\ \hline
+        た   ta & ち   chi & つ   tsu & て   te & と   to \\ \hline
+        だ   da & ぢ   ji  & づ   zu  & で   de & ど   do \\ \hline
+        な   na & に   ni  & ぬ   nu  & ね   ne & の   no \\ \hline
+        は   ha & ひ   hi  & ふ   fu  & へ   he & ほ   ho \\ \hline
+        ば   ba & び   bi  & ぶ   bu  & べ   be & ぼ   bo \\ \hline
+        ぱ   pa & ぴ   pi  & ぷ   pu  & ぺ   pe & ぽ   po \\ \hline
+        ま   ma & み   mi  & む   mu  & め   me & も   mo \\ \hline
+        や   ya &          & ゆ   yu  &         & よ   yo \\ \hline
+        ら   ra & り   ri  & る   ru  & れ   re & ろ   ro \\ \hline
+        わ   wa &          & ん   n   &         & を   wo\\ \hline
+        \end{tabular}
+      }
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{.49\textwidth}
+      \centering
+      \captionof*{table}{\textbf{\underline{Dakuten}}}
+      \Large{
+        \begin{tabular}[t]{|l|l|l|}
+        \hline
+        きゃ   kya & きゅ   kyu & きょ   kyo \\ \hline
+        ぎゃ   gya & ぎゅ   gyu & ぎょ   gyo \\ \hline
+        しゃ   sha & しゅ   shu & しょ   sho \\ \hline
+        じゃ   ja  & じゅ   ju  & じょ   jo  \\ \hline
+        ちゃ   cha & ちゅ   chu & ちょ   cho \\ \hline
+        にゃ   nya & にゅ   nyu & にょ   nyo \\ \hline
+        ひゃ   hya & ひゅ   hyu & ひょ   hyo \\ \hline
+        びゃ   bya & びゅ   byu & びょ   byo \\ \hline
+        ぴゃ   pya & ぴゅ   pyu & ぴょ   pyo \\ \hline
+        みゃ   mya & みゅ   myu & みょ   myo \\ \hline
+        りゃ   rya & りゅ   ryu & りょ   ryo \\ \hline
+        \end{tabular}
+      }
+    \end{minipage}
+  \end{minipage}
+}
+
+\pagebreak
+
+% === BEGIN KATAKANA SECTION ===
+\section*{\center Katakana}
+\label{sec:katakana}
+\center{
+  Katakana is used for transcribing foreign language words. \break \break
+  \begin{minipage}{\textwidth}
+    \begin{minipage}[t]{.49\textwidth}
+      \centering
+      \captionof*{table}{\textbf{\underline{Syllabary}}}
+      \Large{
+        \begin{tabular}[t]{|l|l|l|l|l|}
+        \hline
+        ア   a  & イ   i   & ウ   u   & エ   e  & オ   o  \\ \hline
+        カ   ka & キ   ki  & ク   ku  & ケ   ke & コ   ko \\ \hline
+        ガ   ga & ギ   gi  & グ   gu  & ゲ   ge & ゴ   go \\ \hline
+        サ   sa & シ   shi & ス   su  & セ   se & ソ   so \\ \hline
+        ザ   za & ジ   ji  & ズ   zu  & ゼ   ze & ゾ   zo \\ \hline
+        タ   ta & チ   chi & ツ   tsu & テ   te & ト   to \\ \hline
+        ダ   da & ヂ   ji  & ヅ   zu  & デ   de & ド   do \\ \hline
+        ナ   na & ニ   ni  & ヌ   nu  & ネ   ne & ノ   no \\ \hline
+        ハ   ha & ヒ   hi  & フ   fu  & ヘ   he & ホ   ho \\ \hline
+        バ   ba & ビ   bi  & ブ   bu  & ベ   be & ボ   bo \\ \hline
+        パ   pa & ピ   pi  & プ   pu  & ペ   pe & ポ   po \\ \hline
+        マ   ma & ミ   mi  & ム   mu  & メ   me & モ   mo \\ \hline
+        ヤ   ya &          & ユ   yu  &         & ヨ   yo \\ \hline
+        ラ   ra & リ   ri  & ル   ru  & レ   re & ロ   ro \\ \hline
+        ワ   wa &          & ン   n   &         & ヲ   wo\\  \hline
+        \end{tabular}
+      }
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{.49\textwidth}
+      \centering
+      \captionof*{table}{\textbf{\underline{Dakuten}}}
+      \Large{
+        \begin{tabular}[t]{|l|l|l|}
+        \hline
+        キャ   kya & キュ   kyu & キョ   kyo \\ \hline
+        ギャ   gya & ギュ   gyu & ギョ   gyo \\ \hline
+        シャ   sha & シュ   shu & ショ   sho \\ \hline
+        ジャ   ja  & ジュ   ju  & ジョ   jo  \\ \hline
+        チャ   cha & チュ   chu & チョ   cho \\ \hline
+        ニャ   nya & ニュ   nyu & ニョ   nyo \\ \hline
+        ヒャ   hya & ヒュ   hyu & ヒョ   hyo \\ \hline
+        ビャ   bya & ビュ   byu & ビョ   byo \\ \hline
+        ピャ   pya & ピュ   pyu & ピョ   pyo \\ \hline
+        ミャ   mya & ミュ   myu & ミョ   myo \\ \hline
+        リャ   rya & リュ   ryu & リョ   ryo \\ \hline
+        \end{tabular}
+      }
+    \end{minipage}
+  \end{minipage}
+}
+
+\pagebreak
+
+% === BEGIN KANJI SECTION ===
+\section*{\center Kanji}
+\label{sec:kanji}
+\center{
+  \quad Kanji is the most difficult part of reading Japanese, as it borrows symbols/radicals from the Chinese writing system \href{https://en.wikipedia.org/wiki/Chinese_characters}{hanzi}.
+  Many Kanji can be made out from learning and combining the 214 \href{https://en.wikipedia.org/wiki/Kangxi_radical}{Kanxi radicals}. \break \break
+  \newcolumntype{C}{>{\centering\arraybackslash}}
+  \renewcommand\arraystretch{1.5}
+  \begin{longtable}{|Cp{1.2cm}|Cp{0.3cm}|Cp{3cm}|Cp{5cm}|Cp{0.5cm}|Cp{5cm}|}
+  \hline
+  Radical & \# & Kana-Romaji & Meaning & Pos & Examples \\ \hline
+  一 & 1 & いち-ichi & one &  & 一 戸 旦 \\ \hline
+  丨 & 1 &  & line &  & 巾 引 中 甲 旧 \\ \hline
+  丶 & 1 & てん-ten & dot &  & 刃 凡 丸 丹 太 犬 丼 \\ \hline
+  丿 & 1 &  & bend &  & 丈 久 才 万 丹 少 \\ \hline
+  乙 (乚) & 1 & おつ-otsu & second, latter &  & 乙 乞 乏 孔 屯 札 礼 宅 乱 枕 乳 \\ \hline
+  亅 & 1 &  & hook &  & 了 丁 才 \\ \hline
+  二 & 2 & に-ni & two &  & 井 仁 元 示 \\ \hline
+  亠 & 2 &  & lid & ⊤ & 六 玄 市 夜 京 \\ \hline
+  人 & 2 & ひと-hito & human, person &  & 人 欠 夫 内 囚 丙 失 肉 扶 快 決 \\ \hline
+  亻 & 2 &  & human, person & ◧ & 仏 化 付 代 他 仕 休 位 作 体 住 何 花 信 \\ \hline
+  𠆢 & 2 &  & person (人); (入; roof) & ⊤ & 介 今 合 全 会 谷 \\ \hline
+  入 & 2 & いる-iru & enter &  & 入 込 \\ \hline
+  八 & 2 & はち-hachi & eight; divide & ⊤ & 八 分 公 谷 沿 松 俗 盆 翁 紛容 益 粉 浴 挙 訟 欲 船 雰 裕 鉛 溶 寡 総 嬢 \\ \hline
+  ハ & 2 &  & animal legs & ⊥ & 六 穴 呉 兵 貝 洪 唄 冥 浜 財 員 棋 貿 貸 買 賛 質 興 \\ \hline
+  儿 & 2 &  & human legs & ⊥ & 児 兄 四 見 \\ \hline
+  丷 & 2 &  & grass, plant; horns & ⊤ & 平 半 羊 岡 前 首 南 \\ \hline
+  冫 & 2 &  & ice & ◧ & 次 冶 冷 \\ \hline
+  凵 & 2 &  & container, open mouth & ⊥ &  \\ \hline
+  匚 & 2 &  & box & ⿴ &  \\ \hline
+  冂 & 2 &  & upside down box & ⿴ & 円 冊 再 同 \\ \hline
+  冖 & 2 &  & cover & ⊤ & 売 学 骨 常 \\ \hline
+  几 & 2 & つくえ tsukue & desk, table & ◨ &  \\ \hline
+  九 & 2 & きゅう-kyū & nine &  &  \\ \hline
+  力 & 2 & ちから-chikara & power, force &  &  \\ \hline
+  刀 & 2 & かたな-katana & knife, sword &  &  \\ \hline
+  刂 & 2 &  & knife, sword & ◨ &  \\ \hline
+  乃 & 2 & の-no &  & ⊥ & 秀 透 携 誘 /及 \\ \hline
+  勹 & 2 &  & wrap, embrace & ⿴ & 与 勾 匂 欠 巧 句 包 号 写 旬 朽 汚 考 均 泡 抱 拘 易 的 物 \\ \hline
+  ⺈ & 2 &  & knife, sword & ⊤ & 危 争 色 角 免 浄 急 負 陥 逸 亀 喚 換 象 像 静 衡 艶 \\ \hline
+  マ & 2 & ま-ma. & Katakana マ & ⊤ & 勇 通 湧 痛 踊 疑 凝 擬 /予 矛 \\ \hline
+  匕 & 2 & さじ-saji & spoon; (七 = seven) &  & 七 匂 化 切 叱 北 旨 死 花 虎 背 \\ \hline
+  十 & 2 & じゅう-jū & ten, complete &  &  \\ \hline
+  卜 & 2 & うらない-uranai & divination & ◨ &  \\ \hline
+  又 & 2 & また mata & again, right hand &  &  \\ \hline
+  厶 & 2 & む-mu & private &  &  \\ \hline
+  卩 (㔾) & 2 &  & seal & ◨ & 厄 犯 令 危 印 服 卵 命 報 \\ \hline
+  厂 & 2 &  & cliff & ⿸ &  \\ \hline
+  广 & 3 &  & on a cliff & ⿸ & 序 店 府 \\ \hline
+  口 & 3 & くち-kuchi & mouth, opening &  & 口 古 可 名 君 否 呉 告 周 味 命 和 哲 唐 善 器 \\ \hline
+  囗 & 3 &  & enclosure & ⿴ & 四 回 \\ \hline
+  土 & 3 & つち-tsuchi & earth &  & 土 地 \\ \hline
+  士 & 3 & さむらい-samurai & scholar, bachelor &  & 士 \\ \hline
+  夂 & 3 &  & go & ⊥ & 夏 \\ \hline
+  夕 & 3 & ゆうべ-yūbe & evening, sunset &  & 夕 外 多 夜 \\ \hline
+  尢 & 3 &  &  &  & 沈 枕 就 蹴 /尤 无 \\ \hline
+  大 & 3 & だい-dai & big, very &  & 大 天 \\ \hline
+  女 & 3 & おんな-onna & woman, female &  & 女 \\ \hline
+  子 & 3 & こ-ko & child, seed &  & 子 \\ \hline
+  宀 & 3 &  & roof &  & 家 \\ \hline
+  寸 & 3 & すん-sun & thumb, sundial degree &  & 時 \\ \hline
+  小 & 3 & ちいさい-chīsai & small, insignificant &  & 小 少 \\ \hline
+  ⺌ (⺍) & 3 &  & small, insignificant &  & 当 光 鎖 巣 桜 獣 単 脳 悩 厳 \\ \hline
+  幺 & 3 &  & short thread &  & 幻 幼 \\ \hline
+  尸 & 3 &  & corpse &  & 尺 局 \\ \hline
+  山 & 3 & やま-yama & mountain &  & 山 岡 岩 島 \\ \hline
+  川 & 3 & かわ-kawa & river &  & 川 州 巡 \\ \hline
+  工 & 3 & たくみ-takumi & work &  & 工 左 差 \\ \hline
+  已 & 3 & おのれ-onore & oneself &  & (己 巳) \\ \hline
+  亡 & 3 & な・くす-nakusu & dead, gone &  & 亡 妄 忙 忘 盲 荒 望 慌 網 \\ \hline
+  巾 & 3 & はば-haba & turban, scarf &  & 市 布 帝 常 \\ \hline
+  干 & 3 & ほし-hoshi & dry &  & 平 年 \\ \hline
+  廾 & 3 &  & two hands, twenty &  & 弁 \\ \hline
+  廴 & 3 &  & long stride & ⿺ & 延 \\ \hline
+  ⻌ (辶) & 3 &  & walk & ⿺ & 巡 迎 通 追 逃 迎 進 \\ \hline
+  也 & 3 &  &  & ◨ & 地 池 他 施 \\ \hline
+  弋 & 3 &  & ceremony, shoot, arrow &  & 式 \\ \hline
+  弓 & 3 & ゆみ-yumi & bow &  & 弓 引 \\ \hline
+  彐 & 3 &  & pig snout &  &  \\ \hline
+  彡 & 3 &  & hair, bristle, stubble, beard &  & 杉 形 参 珍 修 彫 惨 彩 診 須 髪 彰 影 膨 顔 鬱 \\ \hline
+  彳 & 3 &  & step & ◧ & 役 彼 後 得 徳 \\ \hline
+  氵 & 3 &  & water & ◧ & 泳 決 治 海 演 漢 瀬 \\ \hline
+  丬 (爿) & 3 &  & split wood & ◧ & 北 壮 状 荘 背 将 装 寝 奨 \\ \hline
+  犭 & 3 &  & dog & ◧ & 犯 狂 狙 \\ \hline
+  扌 & 3 &  & hand & ◧ & 持 掛 打 批 技 抱 押 \\ \hline
+  艹 & 3 &  & grass, vegetation & ⊤ & 共 花 英 苦 草 茶 落 幕 靴 薬 \\ \hline
+  ⻖← & 3 &  & mound (阝-left) & ◧ & 阪 防 阻 院 陳 \\ \hline
+  →⻏ & 3 &  & town (阝-right) & ◨ & 那 邦 郎 部 郭 都 \\ \hline
+  忄 & 3 &  & heart & ◧ & 忙 快 怪 怖 性 恒 恨 悔 悟 悩 悦 惨 悼 惧 惜 情 愉 惰 慌 慄 慨 慎 憎 慢 慣 \\ \hline
+  心 & 4 & こころ-kokoro & heart & ⊥ & 心 必 芯 忍 忌 忘 志 応 泌 忠 念 怒 怠 怨 急 思 恭 恥 恐 恋 恵 恣 秘 恩 息 \\ \hline
+  戈 & 4 &  & spear, halberd &  & 成 式 弐 戦 \\ \hline
+  戸 & 4 & と-to & door, house &  & 戸 戻 所 \\ \hline
+  手 & 4 & て-te & hand &  & 手 挙 \\ \hline
+  攵 & 4 & のぶん-nobunn & action, whip &  &  \\ \hline
+  文 & 4 & ぶん-bunn & script, literature &  & 文 \\ \hline
+  斗 & 4 &  & dipper, measuring scoop &  & 料 \\ \hline
+  斤 & 4 & きん-kinn & axe &  & 新 \\ \hline
+  方 & 4 & ほう-hō & way, square, raft &  & 方 放 旅 族 \\ \hline
+  日 & 4 & にち-nichi & sun, day &  & 日 白 百 明 的 映 時 晩 \\ \hline
+  月 & 4 & つき-tsuki & moon, month; body, flesh &  & 有 服 青 朝 \\ \hline
+  木 & 4 & き-ki & tree &  & 木 板 相 根 森 楽 機 末 本 杉 林 \\ \hline
+  欠 & 4 & けつ-ketsu & yawn, lack &  & 歌 欧 \\ \hline
+  止 & 4 & とめる-tomeru & stop &  & 止 正 歩 \\ \hline
+  歹 & 4 &  & death, decay &  & 死 列 \\ \hline
+  殳 & 4 & るまた-rumata & weapon, lance &  & 役 投 殴 \\ \hline
+  毋 & 4 &  & do not &  & 毎 梅 \\ \hline
+  比 & 4 & くらべる-kuraberu & compare, compete &  & 皆 昆 \\ \hline
+  毛 & 4 & け-ke & fur, hair &  & 毛 \\ \hline
+  氏 & 4 & うじ-uji & clan &  & 氏 民 紙 \\ \hline
+  气 & 4 &  & steam, breath &  & 汽 気 \\ \hline
+  水 & 4 & みず-mizu & water &  & 水 永 \\ \hline
+  火 & 4 & ひ-hi & fire &  & 火 灯 \\ \hline
+  灬 & 4 &  & fire &  & 焦 然 煮 \\ \hline
+  ⺤ (爪) & 4 & つめ-tsume & claw, nail, talon &  & 爪 妥 采 乳 受 浮 将 渓 淫 彩 授 採 菜 援 揺 媛 奨 暖 愛 稲 緩 謡 穏 曖 爵 \\ \hline
+  父 & 4 & ちち-chichi & father &  & 釜 \\ \hline
+  牛 & 4 & うし-ushi & cow &  & 牛 告 牧 物 特 解 \\ \hline
+  犬 & 4 & いぬ-inu & dog &  & 犬 献 獣 \\ \hline
+  王 & 4 & おう-ō & king &  & 王 玉 主 国 弄 皇 理 差 聖 \\ \hline
+  礻 & 4 &  & altar, display &  & 礼 社 神 視 福 \\ \hline
+  耂 & 4 &  & old &  & 孝 \\ \hline
+  勿 & 4 &  & do not &  &  \\ \hline
+  五 & 4 & ご-go & five &  & 五 \\ \hline
+  巴 & 4 &  & cylinder with a trailing tail &  & 色 把 肥 \\ \hline
+  元 & 4 & もと-moto & base, origin &  &  \\ \hline
+  井 & 4 & せい-sei & well &  &  \\ \hline
+  予 & 4 & よ-yo & beforehand, previously &  & 予 序 野 預 /矛 \\ \hline
+  屯 & 4 & トン-ton &  &  & 屯 純 鈍 頓 \\ \hline
+  甘 & 5 & あまい-amai & sweet &  & 甘 甚 某 勘 紺 基 欺 堪 棋 媒 期 旗 謀 \\ \hline
+  生 & 5 & うまれる-umareru & life &  & 牲 甥 \\ \hline
+  用 & 5 & よう-yō & use &  & 用 \\ \hline
+  田 & 5 & た-ta & field &  & 田 町 思 留 略 番 \\ \hline
+  疋 & 5 & ひき-hiki & small animal; bolt of cloth &  & 延 \\ \hline
+  疒 & 5 &  & sickness & ⿸ & 病 症 痛 癖 \\ \hline
+  癶 & 5 &  & footsteps &  & 発 登 \\ \hline
+  白 & 5 & しろ-shiro & white &  & 的 皆 皇 \\ \hline
+  皮 & 5 & けがわ-kegawa & skin &  & 披 彼 波 \\ \hline
+  皿 & 5 & さら-sara & dish &  & 皿 \\ \hline
+  目 & 5 & め-me & eye &  & 目 見 具 省 眠 眼 観 覧 \\ \hline
+  矢 & 5 & や-ya & arrow &  & 医 族 \\ \hline
+  石 & 5 & いし-ishi & stone &  & 石 岩 砂 破 碑 \\ \hline
+  示 & 5 & しめす-shimesu & altar, display &  & 示 奈 祭 禁 \\ \hline
+  禾 & 5 & のぎ-nogi & grain &  & 利 私 季 和 科 香 \\ \hline
+  穴 & 5 & あな-ana & cave &  & 空 突 \\ \hline
+  立 & 5 & たつ-tatsu & stand, erect &  & 立 音 産 翌 意 新 端 親 競 \\ \hline
+  母 & 5 & はは-haha & mother &  & 母 \\ \hline
+  衤 & 5 &  & clothes &  & 初 被 複 \\ \hline
+  罒 & 5 &  & net &  & 買 罪 置 羅 \\ \hline
+  世 & 5 & よ-yo & society, world; generation &  &  \\ \hline
+  ⺻ & 5 &  & brush &  & 津 律 建 書 庸 健 筆 鍵 \\ \hline
+  冊 & 5 & さつ-satsu & (counting) books &  & 冊 柵 倫 偏 遍 論 編 輪 \\ \hline
+  而 & 6 &  & rake &  & 耐 需 端 儒 \\ \hline
+  ⺮ & 6 & たけ-take & bamboo &  & 竹 第 筆 竿 算 答 管 筋 等 笑 箸 \\ \hline
+  米 & 6 & こめ-kome & rice &  &  \\ \hline
+  糸 & 6 & いと-ito & silk &  &  \\ \hline
+  缶 & 6 & かん-kann & tin can &  & 缶 陶 鬱 \\ \hline
+  羊 & 6 & ひつじ-hitsuji & sheep &  &  \\ \hline
+  羽 & 6 & はね-hane & feather, wing &  &  \\ \hline
+  耳 & 6 & みみ-mimi & ear &  &  \\ \hline
+  自 & 6 & じ-ji & self (nose=self) &  &  \\ \hline
+  至 & 6 & いたる-itaru & arrive &  &  \\ \hline
+  舌 & 6 & した-shita & tongue &  &  \\ \hline
+  舟 & 6 & ふね-fune & boat &  &  \\ \hline
+  艮 (良) & 6 & うしとら-ushitora & stopping(?); (good) &  &  \\ \hline
+  虍 & 6 &  & tiger stripes &  & 虎 虐 虚 虜 虞 戯 膚 慮 劇 \\ \hline
+  虫 & 6 & むし-mushi & insect &  &  \\ \hline
+  血 & 6 & ち-chi & blood &  &  \\ \hline
+  行 & 6 & ぎょう-gyō & go, do &  &  \\ \hline
+  衣 & 6 & ころも-koromo & clothes &  &  \\ \hline
+  覀 & 6 & にし-nishi & west &  & 西 価 要 票 煙 腰 慄 漂 遷 標 覆 覇 \\ \hline
+  臣 & 7 & しん-shin & minister, official; slave &  &  \\ \hline
+  見 & 7 & みる-miru & see &  &  \\ \hline
+  角 & 7 & つの-tsuno & horn &  &  \\ \hline
+  言 & 7 & こと-koto & speech &  &  \\ \hline
+  谷 & 7 & たに-tani & valley &  &  \\ \hline
+  豆 & 7 & まめ-mame & bean &  &  \\ \hline
+  豕 & 7 & いのこ-inoko & pig &  &  \\ \hline
+  貝 & 7 & かい-kai & shell &  &  \\ \hline
+  足 & 7 & あし-ashi & foot &  &  \\ \hline
+  身 & 7 & み-mi & body &  &  \\ \hline
+  車 & 7 & くるま-kuruma & cart, car &  &  \\ \hline
+  辛 & 7 & からい-karai & spicy, bitter &  &  \\ \hline
+  辰 & 7 & たつ-tatsu & dragon; morning &  &  \\ \hline
+  酉 & 7 & とり-tori & wine, alcohol &  &  \\ \hline
+  里 & 7 & さと-sato & village, mile &  &  \\ \hline
+  赤 & 7 & あか-aka & red &  & 赤 赦 跡 嚇 繊 \\ \hline
+  走 & 7 & そう-sō & race &  & 走 赴 徒 起 越 超 趣 \\ \hline
+  金 & 8 & かね-kane & metal, gold &  &  \\ \hline
+  長 & 8 & ながい-nagai; ちょう-chyō & long, grow; leader &  &  \\ \hline
+  門 & 8 & もん-mon & gate &  &  \\ \hline
+  隹 & 8 & ふるとり-furutori & small bird &  &  \\ \hline
+  雨 & 8 & あめ-ame & rain &  &  \\ \hline
+  青 & 8 & あお-ao & blue, green &  &  \\ \hline
+  岡 & 8 & おか-oka & hill &  & 岡 剛 綱 鋼 \\ \hline
+  免 & 8 & めん-menn & dismissal &  & 免 勉 逸 晩 \\ \hline
+  斉 & 8 & せい-sei & Chinese Qi kingdom &  & 斉 剤 斎 済 \\ \hline
+  音 & 9 & おと-oto & sound &  &  \\ \hline
+  頁 & 9 & おおがい-ōgai & leaf &  &  \\ \hline
+  食 & 9 & しょく-shyoku & eat, food &  &  \\ \hline
+  首 & 9 & くび-kubi & neck, head &  &  \\ \hline
+  品 & 9 & ひん-hin & item &  &  \\ \hline
+  馬 & 10 & うま-uma & horse &  &  \\ \hline
+  高 & 10 & たかい-takai & tall, high &  &  \\ \hline
+  啇 & 11 &  & base, stem &  & 嫡 滴 摘 適 敵 \\ \hline
+  無 & 12 & む-mu & nothing &  & 無 舞 \\  \hline
+  \end{longtable}
+}
+\end{document}
